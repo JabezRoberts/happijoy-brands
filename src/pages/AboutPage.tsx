@@ -158,7 +158,7 @@ const AboutPage = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
               <img
-                src="/images/Sweet box or Savory boxOur waffle box menu, place your orders before Feb 18, 2026.#Happijoywaff.jpg"
+                src="/images/Sweet-box-or-Savory-box.jpg"
                 alt="HappiJoy Waffle Box Menu"
                 className="w-full rounded-3xl shadow-xl"
               />

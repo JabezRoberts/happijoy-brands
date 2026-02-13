@@ -157,7 +157,7 @@ const PopupEventPage = ({ navigateTo }: PopupEventPageProps) => {
                   </div>
                 </div>
                 <img
-                  src="/images/Get ready for our first ever waffle box pop up on February 24 2026Stay tuned for more infoThis .jpg"
+                  src="/images/get-ready.jpg"
                   alt="Sweet Box"
                   className="w-full h-48 object-cover rounded-xl"
                 />
