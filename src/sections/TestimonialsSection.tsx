@@ -49,7 +49,7 @@ const TestimonialsSection = ({ navigateTo }: TestimonialsSectionProps) => {
             What HappiJoy Lovers Are Saying!
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Real Reviews, Real Flavor, Real Satisfaction! Our customers can't get enough of Yummi Waffles.
+            Real Reviews, Real Flavor, Real Satisfaction! Our customers can't get enough of HappiJoy Waffles.
           </p>
         </div>
 
