@@ -59,11 +59,11 @@ const HeroSection = ({ navigateTo }: HeroSectionProps) => {
             <div className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-gray-200">
               <div className="text-center lg:text-left">
                 <p className="text-3xl font-bold text-[#1a9b8a]">1,000+</p>
-                <p className="text-sm text-gray-500">Happy Customers</p>
+                <p className="text-sm text-gray-500">Waffles Sold</p>
               </div>
               <div className="text-center lg:text-left">
-                <p className="text-3xl font-bold text-[#1a9b8a]">2</p>
-                <p className="text-sm text-gray-500">Unique Flavors</p>
+                <p className="text-3xl font-bold text-[#1a9b8a]">55+</p>
+                <p className="text-sm text-gray-500">Happy Customers</p>
               </div>
               <div className="text-center lg:text-left">
                 <p className="text-3xl font-bold text-[#1a9b8a]">100%</p>
