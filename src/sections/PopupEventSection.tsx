@@ -77,7 +77,7 @@ const PopupEventSection = ({ navigateTo }: PopupEventSectionProps) => {
           {/* Event Image */}
           <div className="relative">
             <img
-              src="../../public/images/Get ready for our first ever waffle box pop up on February 24 2026Stay tuned for more infoThis .jpg"
+              src="../../public/images/Sweet-box-or-Savory-box.jpg"
               alt="HappiJoy Waffle Box Pop-Up Event"
               className="w-full rounded-3xl shadow-2xl"
             />
