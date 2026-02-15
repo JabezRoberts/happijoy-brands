@@ -96,7 +96,7 @@ const AboutPage = () => {
             </div>
             <div className="relative">
               <img
-                src="../../public/images/DSC00651.JPG"
+                src="/images/DSC00651.JPG"
                 alt="HappiJoy Waffles Products"
                 className="w-full rounded-3xl shadow-xl"
               />
@@ -158,7 +158,7 @@ const AboutPage = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
               <img
-                src="../../public/images/Sweet-box-or-Savory-box.jpg"
+                src="/images/Sweet-box-or-Savory-box.jpg"
                 alt="HappiJoy Waffle Box Menu"
                 className="w-full rounded-3xl shadow-xl"
               />

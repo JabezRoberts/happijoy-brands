@@ -157,7 +157,7 @@ const PopupEventPage = ({ navigateTo }: PopupEventPageProps) => {
                   </div>
                 </div>
                 <img
-                  src="../../public/images/get-ready.jpg"
+                  src="/images/get-ready.jpg"
                   alt="Sweet Box"
                   className="w-full h-48 object-cover rounded-xl"
                 />
@@ -185,7 +185,7 @@ const PopupEventPage = ({ navigateTo }: PopupEventPageProps) => {
                   </div>
                 </div>
                 <img
-                  src="../../public/images/get-ready.jpg"
+                  src="/images/get-ready.jpg"
                   alt="Savory Box"
                   className="w-full h-48 object-cover rounded-xl"
                 />
