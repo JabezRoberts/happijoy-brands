@@ -48,7 +48,7 @@ const Footer = ({ navigateTo }: FooterProps) => {
             >
               <div className="w-14 h-14 bg-[#ffc107] rounded-full flex items-center justify-center overflow-hidden">
                 <img
-                  src="../../public/images/happijoy-logo.png"
+                  src="public/images/happijoy-logo.png"
                   alt="HappiJoy Waffles"
                   className="w-12 h-12 object-contain"
                 />
