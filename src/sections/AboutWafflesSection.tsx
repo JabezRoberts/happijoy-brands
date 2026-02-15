@@ -72,7 +72,7 @@ const AboutWafflesSection = () => {
               More Than Just Breakfast
             </h2>
             <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-              Enjoy Yummi Waffles anytime! Perfect for breakfast, snacks, or dessert. 
+              Enjoy HappiJoy Waffles anytime! Perfect for breakfast, snacks, or dessert. 
               Our waffles are incredibly versatile and elevated with signature 
               Jamaican-inspired flavors you won't find anywhere else.
             </p>

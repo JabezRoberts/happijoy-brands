@@ -14,7 +14,7 @@ const OrderCTASection = ({ navigateTo }: OrderCTASectionProps) => {
           Crave It. Taste It. Love It.
         </h2>
         <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-          Order Your Yummi Waffles Today and Indulge in Pure Deliciousness!
+          Order Your HappiJoy Waffles Today and Indulge in Pure Deliciousness!
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">

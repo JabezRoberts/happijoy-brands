@@ -57,7 +57,7 @@ const AboutPage = () => {
               Our Story
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
-              From Yummi Waffles to a True Jamaican Food Brand — a journey of passion, 
+              From Yummi Waffles to a True Jamaican Food Brand. This is a journey of passion, 
               flavor, and the desire to create something delicious that feels like home.
             </p>
           </div>
