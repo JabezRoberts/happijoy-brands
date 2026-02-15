@@ -159,7 +159,7 @@ const PopupEventPage = ({ navigateTo }: PopupEventPageProps) => {
                 <img
                   src="/images/get-ready.jpg"
                   alt="Sweet Box"
-                  className="w-full h-48 object-cover rounded-xl"
+                  className="w-full h-148 object-cover rounded-xl"
                 />
               </div>
             </div>
@@ -187,7 +187,7 @@ const PopupEventPage = ({ navigateTo }: PopupEventPageProps) => {
                 <img
                   src="/images/get-ready.jpg"
                   alt="Savory Box"
-                  className="w-full h-48 object-cover rounded-xl"
+                  className="w-full h-148 object-cover rounded-xl"
                 />
               </div>
             </div>
