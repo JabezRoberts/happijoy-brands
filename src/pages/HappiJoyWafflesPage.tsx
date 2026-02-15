@@ -12,7 +12,7 @@ const HappiJoyWafflesPage = ({ navigateTo }: HappiJoyWafflesPageProps) => {
       name: 'Coconut Pistachio Mini Rounds',
       price: '$1,200',
       description: 'A tropical getaway in every bite! Blends creamy pistachios with exotic coconut sweetness.',
-      image: '/images/🌴✨ Escape to tropical paradise with a nutty twist! Introducing our Coconut Pistachio Waffle 🧇.jpg',
+      image: '/images/happi-joy-tropical-waffles.jpg',
       badge: 'Best Seller',
     },
     {
@@ -171,7 +171,7 @@ const HappiJoyWafflesPage = ({ navigateTo }: HappiJoyWafflesPageProps) => {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Mini Rounds</h3>
               <p className="text-gray-600 mb-4">
-                4-inch waffles, light and tasty — 8 per pack
+                4-inch waffles, light and tasty, 8 per pack.
               </p>
               <p className="text-2xl font-bold text-[#1a9b8a]">$1,200</p>
             </div>
@@ -182,7 +182,7 @@ const HappiJoyWafflesPage = ({ navigateTo }: HappiJoyWafflesPageProps) => {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Belgian Waffles</h3>
               <p className="text-gray-600 mb-4">
-                6-inch waffles, thick and fluffy — 4 per pack. Available on request.
+                6-inch waffles, thick and fluffy, 4 per pack. Available on request.
               </p>
               <p className="text-2xl font-bold text-[#1a9b8a]">$2,000</p>
             </div>

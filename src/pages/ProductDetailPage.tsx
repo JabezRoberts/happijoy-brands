@@ -15,7 +15,7 @@ const ProductDetailPage = ({ flavor, navigateTo }: ProductDetailPageProps) => {
       tagline: 'A tropical getaway in every bite!',
       description: 'Coconut Pistachio Mini Rounds blend the creamy, nutty goodness of pistachios with the exotic sweetness of coconut. Light, crispy, and packed with island vibes—this waffle is a must-try!',
       fullDescription: 'Tropical sweetness meets nutty perfection in our Coconut Pistachio Mini Rounds. These waffles combine the creamy richness of coconut with the crunchy, buttery goodness of pistachios for a unique flavor experience. Each bite brings a taste of the islands, making them the perfect breakfast treat, afternoon snack, or post-dinner delight.',
-      mainImage: '/images/🌴✨ Escape to tropical paradise with a nutty twist! Introducing our Coconut Pistachio Waffle 🧇.jpg',
+      mainImage: '/images/happi-joy-tropical-waffles.jpg',
       galleryImages: [
         '/images/WEBCocoP-Side1 (1).jpg',
         '/images/DSC00636.JPG',

@@ -2,9 +2,9 @@ import { Target, Eye, Heart, Award, Users, Leaf } from 'lucide-react'
 
 const AboutPage = () => {
   const stats = [
-    { value: '230+', label: 'Waffles Sold' },
-    { value: '500+', label: 'Happy Clients' },
-    { value: '12+', label: 'Years Experience' },
+    { value: '1,000+', label: 'Waffles Sold' },
+    { value: '50+', label: 'Happy Customers' },
+    { value: '100%', label: 'Jamaican Made' },
     { value: '100%', label: 'Fresh & Tasty' },
   ]
 
@@ -12,7 +12,7 @@ const AboutPage = () => {
     {
       name: 'Sherwayne Roberts',
       role: 'Founder, CEO',
-      description: 'Visionary leader with a passion for bringing joy through food.',
+      description: 'Passionate leader with a passion for bringing joy through food.',
     },
     {
       name: 'Shaniel Roberts',
@@ -35,12 +35,12 @@ const AboutPage = () => {
     {
       icon: Eye,
       title: 'Our Vision',
-      description: 'To become the #1 waffle company in the world by 2035 and redefine how people enjoy waffles.',
+      description: 'To become the #1 waffle company in the world and redefine how people enjoy waffles.',
     },
     {
       icon: Heart,
       title: 'Our Passion',
-      description: 'We believe food should make people feel something — a smile, a memory, a spark of joy.',
+      description: 'We believe food should be an experience that gives a smile, a memory, and a spark of joy.',
     },
   ]
 

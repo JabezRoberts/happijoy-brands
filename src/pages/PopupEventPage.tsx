@@ -48,7 +48,7 @@ const PopupEventPage = ({ navigateTo }: PopupEventPageProps) => {
           <div className="text-center max-w-3xl mx-auto">
             <div className="inline-flex items-center gap-2 bg-[#ffc107] text-gray-900 px-4 py-2 rounded-full text-sm font-bold mb-6">
               <Calendar className="w-4 h-4" />
-              <span>First Ever Pop-Up Event!</span>
+              <p>Our First Ever Pop-Up Event!</p>
             </div>
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
@@ -57,7 +57,7 @@ const PopupEventPage = ({ navigateTo }: PopupEventPageProps) => {
             </h1>
             
             <p className="text-xl text-white/90 mb-8">
-              Don't Miss Out – A Tasty Event You Won't Want to Miss!
+              Don't Miss Out On A Tasty Event You Won't Want To Miss!
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -138,7 +138,7 @@ const PopupEventPage = ({ navigateTo }: PopupEventPageProps) => {
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Sweet Box */}
             <div className="bg-white rounded-3xl overflow-hidden shadow-xl">
-              <div className="bg-gradient-to-r from-pink-500 to-rose-500 p-6 text-white">
+              <div className="bg-gradient-to-r from-red-600 to-red-500 p-6 text-white">
                 <h3 className="text-2xl font-bold mb-2">Sweet Box</h3>
                 <p className="opacity-90">For those with a sweet tooth!</p>
               </div>
@@ -148,7 +148,7 @@ const PopupEventPage = ({ navigateTo }: PopupEventPageProps) => {
                   <div className="space-y-2">
                     {sweetWaffles.map((waffle, index) => (
                       <div key={index} className="flex items-center gap-2">
-                        <div className="w-5 h-5 bg-pink-500 rounded-full flex items-center justify-center">
+                        <div className="w-5 h-5 bg-red-500 rounded-full flex items-center justify-center">
                           <Check className="w-3 h-3 text-white" />
                         </div>
                         <span className="text-gray-700">{waffle}</span>
@@ -185,7 +185,7 @@ const PopupEventPage = ({ navigateTo }: PopupEventPageProps) => {
                   </div>
                 </div>
                 <img
-                  src="../../public/images/Sweet box or Savory boxOur waffle box menu, place your orders before Feb 18, 2026.#Happijoywaff.jpg"
+                  src="../../public/images/get-ready.jpg"
                   alt="Savory Box"
                   className="w-full h-48 object-cover rounded-xl"
                 />
@@ -338,7 +338,7 @@ const PopupEventPage = ({ navigateTo }: PopupEventPageProps) => {
             </a>
           </div>
           <p className="text-white/80 mt-6">
-            Follow us on social media: <span className="font-semibold">@happijoywafflesja</span>
+            Follow us on social media: <span className="font-semibold text-white">@happijoywafflesja</span>
           </p>
         </div>
       </section>

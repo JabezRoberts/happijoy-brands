@@ -58,7 +58,7 @@ const HeroSection = ({ navigateTo }: HeroSectionProps) => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-gray-200">
               <div className="text-center lg:text-left">
-                <p className="text-3xl font-bold text-[#1a9b8a]">500+</p>
+                <p className="text-3xl font-bold text-[#1a9b8a]">1,000+</p>
                 <p className="text-sm text-gray-500">Happy Customers</p>
               </div>
               <div className="text-center lg:text-left">

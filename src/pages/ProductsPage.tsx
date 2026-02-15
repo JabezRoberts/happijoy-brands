@@ -14,7 +14,7 @@ const ProductsPage = ({ navigateTo }: ProductsPageProps) => {
       price: '$1,200.00',
       description: 'A tropical getaway in every bite! Coconut Pistachio Mini Rounds blend the creamy, nutty goodness of pistachios with the exotic sweetness of coconut. Light, crispy, and packed with island vibes—this waffle is a must-try!',
       fullDescription: 'Tropical sweetness meets nutty perfection in our Coconut Pistachio Mini Rounds. These waffles combine the creamy richness of coconut with the crunchy, buttery goodness of pistachios for a unique flavor experience. Each bite brings a taste of the islands, making them the perfect breakfast treat, afternoon snack, or post-dinner delight.',
-      image: '/images/🌴✨ Escape to tropical paradise with a nutty twist! Introducing our Coconut Pistachio Waffle 🧇.jpg',
+      image: '/images/happi-joy-tropical-waffles.jpg',
       productImage: '/images/WEBCocoP-Side1 (1).jpg',
       badge: 'Best Seller',
       badgeColor: 'bg-[#1a9b8a]',
@@ -32,6 +32,7 @@ const ProductsPage = ({ navigateTo }: ProductsPageProps) => {
         'Scoop of vanilla ice cream',
         'Fresh berries on top',
       ],
+      ratings: ['5.0 (380+ sold)'],
     },
     {
       id: 'chocolate',
@@ -57,6 +58,7 @@ const ProductsPage = ({ navigateTo }: ProductsPageProps) => {
         'Add fresh strawberries',
         'Serve with ice cream',
       ],
+      ratings: ['5.0 (400+ sold)'],
     },
   ]
 
@@ -116,7 +118,7 @@ const ProductsPage = ({ navigateTo }: ProductsPageProps) => {
                 <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
                   <div className="flex items-center gap-2 mb-4">
                     <Star className="w-5 h-5 fill-[#ffc107] text-[#ffc107]" />
-                    <span className="text-gray-600 text-sm">4.9 (200+ reviews)</span>
+                    <span className="text-gray-600 text-sm">{product.ratings}</span>
                   </div>
 
                   <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -213,7 +215,7 @@ const ProductsPage = ({ navigateTo }: ProductsPageProps) => {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Mini Rounds</h3>
               <p className="text-gray-600 mb-4">
-                4-inch waffles, light and tasty — 8 per pack, perfect for sharing 
+                4-inch waffles, light and tasty, 8 per pack, perfect for sharing 
                 or enjoying throughout the week.
               </p>
               <p className="text-2xl font-bold text-[#1a9b8a]">$1,200</p>
@@ -225,7 +227,7 @@ const ProductsPage = ({ navigateTo }: ProductsPageProps) => {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3">Belgian Waffles</h3>
               <p className="text-gray-600 mb-4">
-                6-inch waffles, thick and fluffy — 4 per pack. Available on request.
+                6-inch waffles, thick and fluffy, 4 per pack. Available on request.
               </p>
               <p className="text-2xl font-bold text-[#1a9b8a]">$2,000</p>
             </div>

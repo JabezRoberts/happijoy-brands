@@ -13,7 +13,7 @@ const ProductsSection = ({ navigateTo }: ProductsSectionProps) => {
       name: 'Coconut Pistachio Mini Rounds',
       price: '$1,200.00',
       description: 'A tropical getaway in every bite! Blends the creamy, nutty goodness of pistachios with the exotic sweetness of coconut.',
-      image: '/images/🌴✨ Escape to tropical paradise with a nutty twist! Introducing our Coconut Pistachio Waffle 🧇.jpg',
+      image: '/images/happi-joy-tropical-waffles.jpg',
       badge: 'Best Seller',
       badgeColor: 'bg-[#1a9b8a]',
     },
@@ -40,7 +40,7 @@ const ProductsSection = ({ navigateTo }: ProductsSectionProps) => {
             Our Crowd Favorites
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Discover our most loved waffles — exotic, delicious, and made with love in Jamaica.
+            Discover our most loved waffles made with exotic ingredients, bursting with delicious flavors, and made with love in Jamaica.
             Indulge in the flavors our customers can't get enough of!
           </p>
         </div>
@@ -115,7 +115,7 @@ const ProductsSection = ({ navigateTo }: ProductsSectionProps) => {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-gray-900">Mini Rounds</h3>
-                <p className="text-gray-600 text-sm">4-inch waffles, light and tasty — 8 per pack, perfect for sharing.</p>
+                <p className="text-gray-600 text-sm">4-inch waffles, light and tasty, 8 per pack, perfect for sharing.</p>
                 <p className="text-[#1a9b8a] font-bold mt-1">$1,200</p>
               </div>
             </div>
@@ -127,7 +127,7 @@ const ProductsSection = ({ navigateTo }: ProductsSectionProps) => {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-gray-900">Belgian Waffles</h3>
-                <p className="text-gray-600 text-sm">6-inch waffles, thick and fluffy — 4 per pack. Available on request.</p>
+                <p className="text-gray-600 text-sm">6-inch waffles, thick and fluffy, 4 per pack. Available on request.</p>
                 <p className="text-[#1a9b8a] font-bold mt-1">$2,000</p>
               </div>
             </div>
