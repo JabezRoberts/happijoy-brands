@@ -37,19 +37,19 @@ const AboutWafflesSection = () => {
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <img
-                  src="/images/DSC00636.JPG"
+                  src="../../public/images/DSC00636.JPG"
                   alt="Coconut Pistachio Waffles"
                   className="w-full rounded-2xl shadow-lg object-cover h-64"
                 />
                 <img
-                  src="/images/DSC00616.JPG"
+                  src="../../public/images/DSC00616.JPG"
                   alt="Waffle Products"
                   className="w-full rounded-2xl shadow-lg object-cover h-48"
                 />
               </div>
               <div className="pt-8">
                 <img
-                  src="/images/DSC00618.JPG"
+                  src="../../public/images/DSC00618.JPG"
                   alt="Chocolate Supreme Waffles"
                   className="w-full rounded-2xl shadow-lg object-cover h-80"
                 />

@@ -62,19 +62,19 @@ const ContactPage = () => {
     {
       icon: MapPin,
       title: 'Delivery Areas',
-      content: 'Kingston, St. Andrew, Spanish Town, Portmore',
+      content: 'Spanish Town, Portmore, (Kingston & St. Andrew on Request)',
       href: '#',
     },
   ]
 
   const workingHours = [
-    { day: 'Monday', hours: '9:00 AM - 12:00 AM' },
-    { day: 'Tuesday', hours: '9:00 AM - 12:00 AM' },
-    { day: 'Wednesday', hours: 'CLOSED' },
-    { day: 'Thursday', hours: '9:00 AM - 12:00 AM' },
-    { day: 'Friday', hours: '9:00 AM - 2:00 AM' },
-    { day: 'Saturday', hours: '9:00 AM - 2:00 AM' },
-    { day: 'Sunday', hours: '9:00 AM - 2:00 AM' },
+    { day: 'Monday', hours: '9:00 AM - 5:00 PM' },
+    { day: 'Tuesday', hours: '9:00 AM - 5:00 PM' },
+    { day: 'Wednesday', hours: '9:00 AM - 5:00 PM' },
+    { day: 'Thursday', hours: '9:00 AM - 5:00 PM' },
+    { day: 'Friday', hours: '9:00 AM - 5:00 PM' },
+    { day: 'Saturday', hours: 'CLOSED' },
+    { day: 'Sunday', hours: '10:00 AM - 2:00 PM' },
   ]
 
   return (

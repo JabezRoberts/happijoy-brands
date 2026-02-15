@@ -49,7 +49,7 @@ const Navigation = ({ currentPage, navigateTo, isScrolled }: NavigationProps) =>
           >
             <div className="w-12 h-12 bg-[#ffc107] rounded-full flex items-center justify-center overflow-hidden">
               <img
-                src="/images/happijoy-logo.png"
+                src="../../public/images/happijoy-logo.png"
                 alt="HappiJoy Brands"
                 className="w-10 h-10 object-contain"
               />

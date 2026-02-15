@@ -82,7 +82,7 @@ const HappiJoyWafflesPage = ({ navigateTo }: HappiJoyWafflesPageProps) => {
             </div>
             <div className="flex justify-center">
               <img
-                src="/images/happijoy-logo.png"
+                src="../../public/images/happijoy-logo.png"
                 alt="HappiJoy Waffles Logo"
                 className="w-full max-w-md"
               />

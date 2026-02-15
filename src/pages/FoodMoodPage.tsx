@@ -98,7 +98,7 @@ const FoodMoodPage = () => {
             </div>
             <div className="flex justify-center">
               <img
-                src="/images/foodmood-logo.png"
+                src="../../public/images/foodmood-logo.png"
                 alt="Food Mood Logo"
                 className="w-full max-w-md"
               />

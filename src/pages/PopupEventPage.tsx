@@ -157,7 +157,7 @@ const PopupEventPage = ({ navigateTo }: PopupEventPageProps) => {
                   </div>
                 </div>
                 <img
-                  src="/images/get-ready.jpg"
+                  src="../../public/images/get-ready.jpg"
                   alt="Sweet Box"
                   className="w-full h-48 object-cover rounded-xl"
                 />
@@ -185,7 +185,7 @@ const PopupEventPage = ({ navigateTo }: PopupEventPageProps) => {
                   </div>
                 </div>
                 <img
-                  src="/images/Sweet box or Savory boxOur waffle box menu, place your orders before Feb 18, 2026.#Happijoywaff.jpg"
+                  src="../../public/images/Sweet box or Savory boxOur waffle box menu, place your orders before Feb 18, 2026.#Happijoywaff.jpg"
                   alt="Savory Box"
                   className="w-full h-48 object-cover rounded-xl"
                 />
@@ -270,7 +270,8 @@ const PopupEventPage = ({ navigateTo }: PopupEventPageProps) => {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">1. Contact Us</h3>
               <p className="text-gray-600">
-                Message us on WhatsApp at <a href="tel:8763165022" className="text-[#1a9b8a] font-medium">876-316-5022</a> or <a href="tel:8763165814" className="text-[#1a9b8a] font-medium">876-316-5814</a>
+                Message us on WhatsApp at <a href="tel:8763165022" className="text-[#1a9b8a] font-medium">876-316-5022</a> during business hours.
+                {/* Message us on WhatsApp at <a href="tel:8763165022" className="text-[#1a9b8a] font-medium">876-316-5022</a> or <a href="tel:8763165814" className="text-[#1a9b8a] font-medium">876-316-5814</a> */}
               </p>
             </div>
 

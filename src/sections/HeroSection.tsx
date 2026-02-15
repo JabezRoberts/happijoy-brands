@@ -76,7 +76,7 @@ const HeroSection = ({ navigateTo }: HeroSectionProps) => {
           <div className="relative">
             <div className="relative z-10">
               <img
-                src="/images/DSC00655.JPG"
+                src="../../public/images/DSC00655.JPG"
                 alt="HappiJoy Waffles Collection"
                 className="w-full rounded-3xl shadow-2xl"
               />
