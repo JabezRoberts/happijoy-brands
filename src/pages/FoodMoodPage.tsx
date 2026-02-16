@@ -71,13 +71,13 @@ const FoodMoodPage = () => {
                 <span>From HappiJoy Brands</span>
               </div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-                <span className="text-[#d97706]">Food Mood</span>
+                <span className="text-[#d97706]">FoodMood</span>
               </h1>
               <p className="text-xl text-[#d97706] font-medium mb-6">
                 Flavor that sets the vibe.
               </p>
               <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-                At Food Mood, we don't just make toppings and sauces. We create bold, 
+                At FoodMood, we don't just make toppings and sauces. We create bold, 
                 feel-good flavors that turn simple bites into unforgettable moments. 
                 Whether you're baking, plating, or just treating yourself, our handcrafted 
                 creations bring the right energy to every dish.
@@ -99,7 +99,7 @@ const FoodMoodPage = () => {
             <div className="flex justify-center">
               <img
                 src="/images/foodmood-logo.png"
-                alt="Food Mood Logo"
+                alt="FoodMood Logo"
                 className="w-full max-w-md"
               />
             </div>
@@ -184,7 +184,7 @@ const FoodMoodPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-              Why Choose Food Mood?
+              Why Choose FoodMood?
             </h2>
           </div>
 
@@ -227,11 +227,11 @@ const FoodMoodPage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-                What Is Food Mood?
+                What Is FoodMood?
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Food Mood is all about creating flavors that make you feel something.
+                  FoodMood is all about creating flavors that make you feel something.
                 </p>
                 <p>
                   We believe food is more than just something you eat. It's comfort after 
@@ -240,7 +240,7 @@ const FoodMoodPage = () => {
                   That's where we come in.
                 </p>
                 <p>
-                  Food Mood was created to craft bold, memorable toppings and sauces that 
+                  FoodMood was created to craft bold, memorable toppings and sauces that 
                   elevate everyday dishes. We focus on rich textures, balanced sweetness, 
                   vibrant fruit flavors, and that extra touch that makes people pause and say, 
                   "Wait… what is that?"

@@ -18,11 +18,11 @@ const Footer = ({ navigateTo }: FooterProps) => {
 
   const brandLinks = [
     { label: 'HappiJoy Waffles', page: 'happijoy-waffles' as Page },
-    { label: 'Food Mood', page: 'foodmood' as Page },
+    { label: 'FoodMood', page: 'foodmood' as Page },
   ]
 
   const helpLinks = [
-    { label: 'FAQ', page: 'contact' as Page },
+    { label: 'FAQ', page: 'FAQPage' as Page },
     { label: 'Delivery Info', page: 'delivery' as Page },
     { label: 'Returns & Exchanges', page: 'returns' as Page },
     { label: 'Cancellation Policy', page: 'cancellation' as Page },
@@ -59,7 +59,7 @@ const Footer = ({ navigateTo }: FooterProps) => {
               </div>
             </button>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Family of Flavor & Fun. Bringing joy to every bite with our 
+              A Family of Flavor & Fun. Bringing joy to every bite with our 
               Jamaican-made, Caribbean-inspired waffle flavors.
             </p>
             <div className="flex gap-3">
@@ -182,7 +182,7 @@ const Footer = ({ navigateTo }: FooterProps) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-gray-400 text-sm text-center md:text-left">
-              © {currentYear} HappiJoy Brands | The Home of Exotic Waffles. All rights reserved.
+              © {currentYear} HappiJoy Brands | A family of flavor and fun. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
               {legalLinks.map((link) => (

@@ -23,7 +23,7 @@ const Navigation = ({ currentPage, navigateTo, isScrolled }: NavigationProps) =>
 
   const brandLinks: { label: string; page: Page }[] = [
     { label: 'HappiJoy Waffles', page: 'happijoy-waffles' },
-    { label: 'Food Mood', page: 'foodmood' },
+    { label: 'FoodMood', page: 'foodmood' },
   ]
 
   const handleNavClick = (page: Page) => {
@@ -47,11 +47,11 @@ const Navigation = ({ currentPage, navigateTo, isScrolled }: NavigationProps) =>
             onClick={() => handleNavClick('home')}
             className="flex items-center gap-2 group"
           >
-            <div className="w-12 h-12 bg-[#ffc107] rounded-full flex items-center justify-center overflow-hidden">
+            {/* <div className="w-12 h-12 bg-[#000000] rounded-full flex items-center justify-center overflow-hidden">
               <img
-                src="/images/happijoy-logo.png"
+                src="/images/happijoy-brands-teal-logo.png"
                 alt="HappiJoy Brands"
-                className="w-10 h-10 object-contain"
+                className="w-12 h-12 object-cover"
               />
             </div>
             <div className="hidden sm:block text-left">
@@ -61,7 +61,12 @@ const Navigation = ({ currentPage, navigateTo, isScrolled }: NavigationProps) =>
               <span className={`text-xs block ${isScrolled ? 'text-gray-600' : 'text-gray-700'}`}>
                 Brands
               </span>
-            </div>
+            </div> */}
+            <img
+              src="/images/happijoy-brands-teal-logo-2.png"
+              alt="HappiJoy Brands"
+              className="w-15 h-20 object-cover"
+            />
           </button>
 
           {/* Desktop Navigation */}

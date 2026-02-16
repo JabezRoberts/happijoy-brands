@@ -96,13 +96,13 @@ const AboutPage = () => {
             </div>
             <div className="relative">
               <img
-                src="/images/DSC00651.JPG"
+                src="/images/yummi-waffles-to-happijoy-brands.png"
                 alt="HappiJoy Waffles Products"
                 className="w-full rounded-3xl shadow-xl"
               />
-              <div className="absolute -bottom-6 -right-6 bg-[#ffc107] rounded-2xl p-6 shadow-xl">
-                <p className="text-4xl font-bold text-gray-900">100%</p>
-                <p className="text-gray-800">Jamaican Made</p>
+              <div className="absolute -bottom-18 -right-6 bg-[#ffc107] rounded-2xl p-6 shadow-xl">
+                <p className="text-4xl font-bold text-gray-900">Our Journey</p>
+                <p className="text-gray-800">From Yummi Waffles To HappiJoy Brands</p>
               </div>
             </div>
           </div>

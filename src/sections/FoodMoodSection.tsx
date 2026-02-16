@@ -19,7 +19,7 @@ const FoodMoodSection = ({ navigateTo }: FoodMoodSectionProps) => {
             </div>
 
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-              Meet <span className="text-[#d97706]">Food Mood</span>
+              Meet <span className="text-[#d97706]">FoodMood</span>
             </h2>
 
             <p className="text-xl text-[#d97706] font-medium mb-6">
@@ -27,7 +27,7 @@ const FoodMoodSection = ({ navigateTo }: FoodMoodSectionProps) => {
             </p>
 
             <p className="text-gray-600 text-lg mb-6 leading-relaxed">
-              Food Mood is the newest concept from HappiJoy Brands, created for people 
+              FoodMood is the newest concept from HappiJoy Brands, created for people 
               who want more than just a meal. Whether you're in the mood for something 
               sweet, something bold, or something comforting, we've built this experience 
               around how you want to feel.
@@ -53,7 +53,7 @@ const FoodMoodSection = ({ navigateTo }: FoodMoodSectionProps) => {
               size="lg"
               className="bg-[#d97706] hover:bg-[#b45309] text-white font-semibold rounded-full px-8"
             >
-              Explore Food Mood
+              Explore FoodMood
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </div>
@@ -64,7 +64,7 @@ const FoodMoodSection = ({ navigateTo }: FoodMoodSectionProps) => {
             <div className="relative bg-white rounded-3xl shadow-2xl p-8">
               <img
                 src="/images/foodmood-logo.png"
-                alt="Food Mood Logo"
+                alt="FoodMood Logo"
                 className="w-full max-w-md"
               />
               <div className="mt-6 text-center">

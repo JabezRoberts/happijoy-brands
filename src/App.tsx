@@ -18,10 +18,12 @@ import ReturnsPage from './pages/ReturnsPage'
 import CancellationPage from './pages/CancellationPage'
 import AllergyPage from './pages/AllergyPage'
 import DisclaimerPage from './pages/DisclaimerPage'
+import FAQPage from './pages/FAQPage'
 
 export type Page = 
   | 'home' 
   | 'about' 
+  | 'faq'
   | 'contact' 
   | 'products' 
   | 'product-coconut' 
@@ -64,6 +66,8 @@ function App() {
         return <HomePage navigateTo={navigateTo} />
       case 'about':
         return <AboutPage />
+      case 'faq':
+        return <FAQPage />
       case 'contact':
         return <ContactPage />
       case 'products':
