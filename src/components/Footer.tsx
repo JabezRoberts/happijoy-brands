@@ -48,7 +48,7 @@ const Footer = ({ navigateTo }: FooterProps) => {
             >
               <div className="w-14 h-14 bg-[#ffc107] rounded-full flex items-center justify-center overflow-hidden">
                 <img
-                  src="public/images/happijoy-logo.png"
+                  src="/images/happijoy-logo.png"
                   alt="HappiJoy Waffles"
                   className="w-12 h-12 object-contain"
                 />
@@ -59,7 +59,7 @@ const Footer = ({ navigateTo }: FooterProps) => {
               </div>
             </button>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              The Home of Exotic Waffles. Bringing joy to every bite with our 
+              Family of Flavor & Fun. Bringing joy to every bite with our 
               Jamaican-made, Caribbean-inspired waffle flavors.
             </p>
             <div className="flex gap-3">

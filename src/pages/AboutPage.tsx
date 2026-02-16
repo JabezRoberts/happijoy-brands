@@ -16,12 +16,12 @@ const AboutPage = () => {
     },
     {
       name: 'Shaniel Roberts',
-      role: 'Founder, COO',
+      role: 'Co-Founder, COO',
       description: 'Operations expert ensuring every waffle meets our high standards.',
     },
     {
       name: 'Jabez Roberts',
-      role: 'Founder, CMO',
+      role: 'Co-Founder, CMO',
       description: 'Creative mind behind the HappiJoy brand and marketing.',
     },
   ]

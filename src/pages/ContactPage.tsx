@@ -14,6 +14,7 @@ const ContactPage = () => {
     subject: '',
     phone: '',
     message: '',
+    websiteUrl: '',
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
 
@@ -26,6 +27,19 @@ const ContactPage = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+
+    // Quick honeypot check (client-side for speed, but ideally do on server too)
+    if (formData.websiteUrl?.trim() !== '') {
+      // Bot detected → fake success or silent fail
+      toast({
+        title: 'Message Sent!',
+        description: 'Thank you! (This is a test response)',
+      })
+      // Reset form anyway so user thinks it worked
+      setFormData({ name: '', email: '', subject: '', phone: '', message: '', websiteUrl: '' })
+      return
+    }
+
     setIsSubmitting(true)
     
     // Simulate form submission
@@ -42,6 +56,7 @@ const ContactPage = () => {
       subject: '',
       phone: '',
       message: '',
+      websiteUrl: ''
     })
     setIsSubmitting(false)
   }
@@ -192,6 +207,19 @@ const ContactPage = () => {
                     required
                     rows={5}
                     className="rounded-xl resize-none"
+                  />
+                </div>
+
+                <div style={{ position: 'absolute', left: '-9999px', overflow: 'hidden', height: 0 }}>
+                  <label htmlFor="website_url">Don't fill this out if you're human:</label>
+                  <input
+                    type="text"
+                    id="website_url"
+                    name="website_url"           // tempting name for bots
+                    tabIndex={-1}
+                    autoComplete="off"
+                    value={formData.websiteUrl || ''}
+                    onChange={handleChange}
                   />
                 </div>
 
