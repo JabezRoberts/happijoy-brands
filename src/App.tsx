@@ -57,6 +57,13 @@ function App() {
   }, [currentPage])
 
   const navigateTo = (page: Page) => {
+    // Optional: map 'home' → '/' and others → `/${page}`
+    const path = page === 'home' ? '/' : `/${page}`;
+
+    // Update browser URL without reload
+    window.history.pushState({}, '', path);
+
+    // Update internal state (what already works for you)
     setCurrentPage(page)
   }
 
