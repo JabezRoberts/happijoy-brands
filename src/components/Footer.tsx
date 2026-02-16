@@ -55,7 +55,7 @@ const Footer = ({ navigateTo }: FooterProps) => {
               </div>
               <div className="text-left">
                 <span className="font-bold text-xl text-[#ffc107] block">HappiJoy</span>
-                <span className="text-sm text-gray-400">Waffles</span>
+                <span className="text-sm text-gray-300">Brands</span>
               </div>
             </button>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
