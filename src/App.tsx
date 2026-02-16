@@ -53,6 +53,35 @@ function App() {
   }, [])
 
   useEffect(() => {
+  const handlePopState = () => {
+    // Get the current path from URL
+    const path = window.location.pathname;
+
+    // Map path back to your Page type
+    let newPage: Page = 'home';
+    if (path === '/about') newPage = 'about';
+    else if (path === '/faq') newPage = 'faq';
+    else if (path === '/contact') newPage = 'contact';
+    else if (path === '/products') newPage = 'products';
+    else if (path === '/popup-event') newPage = 'popup-event';
+    // ... add all other pages you care about
+    // For dynamic ones like /product-coconut → you may need more parsing
+
+    setCurrentPage(newPage);
+  };
+
+  // Listen for back/forward
+  window.addEventListener('popstate', handlePopState);
+
+  // Also run once on mount (in case user deep-links or refreshes)
+  handlePopState();
+
+  return () => {
+    window.removeEventListener('popstate', handlePopState);
+  };
+}, []);
+
+  useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [currentPage])
 

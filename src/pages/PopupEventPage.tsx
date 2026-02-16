@@ -38,7 +38,7 @@ const PopupEventPage = ({ navigateTo }: PopupEventPageProps) => {
   ]
 
   return (
-    <div className="pt-20">
+    <div className="pt-20 mt-5">
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-[#1a1a2e] to-[#2d2d44] text-white overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#ffc107]/10 rounded-full blur-3xl" />
