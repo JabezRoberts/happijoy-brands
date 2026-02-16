@@ -136,6 +136,7 @@ const PopupEventPage = ({ navigateTo }: PopupEventPageProps) => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8">
+            
             {/* Sweet Box */}
             <div className="bg-white rounded-3xl overflow-hidden shadow-xl">
               <div className="bg-gradient-to-r from-red-600 to-red-500 p-6 text-white">
@@ -156,11 +157,18 @@ const PopupEventPage = ({ navigateTo }: PopupEventPageProps) => {
                     ))}
                   </div>
                 </div>
-                <img
-                  src="/images/get-ready.jpg"
-                  alt="Sweet Box"
-                  className="w-full h-148 object-cover rounded-xl"
-                />
+
+                {/** Two images of the complete Sweet box */}
+                {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6"> */}
+                <div className="flex items-center mt-6">
+                  <div className="overflow-hidden rounded-xl shadow-md">
+                    <img
+                      src="/images/happijoy-waffles-sweet-box-2.jpg"  // ← your first Sweet Box photo
+                      alt="Sweet Waffle Box - full packaged meal"
+                      className="w-full h-auto object-cover"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -184,11 +192,17 @@ const PopupEventPage = ({ navigateTo }: PopupEventPageProps) => {
                     ))}
                   </div>
                 </div>
-                <img
-                  src="/images/get-ready.jpg"
-                  alt="Savory Box"
-                  className="w-full h-148 object-cover rounded-xl"
-                />
+
+                {/**  Two images of complete savory box */}
+                <div className="flex items-center mt-6">
+                  <div className="overflow-hidden rounded-xl shadow-md">
+                    <img
+                      src="/images/happijoy-waffles-savory-box.jpg"  // ← your first Sweet Box photo
+                      alt="Sweet Waffle Box - full packaged meal"
+                      className="w-full h-auto object-cover"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
