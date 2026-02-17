@@ -96,12 +96,12 @@ const AboutPage = () => {
             </div>
             <div className="relative">
               <img
-                src="/images/yummi-waffles-to-happijoy-brands.png"
+                src="/images/from-yummi-to-happi-2.png"
                 alt="HappiJoy Waffles Products"
                 className="w-full rounded-3xl shadow-xl"
               />
               <div className="absolute -bottom-18 -right-6 bg-[#ffc107] rounded-2xl p-6 shadow-xl">
-                <p className="text-4xl font-bold text-gray-900">Our Journey</p>
+                <p className="text-4xl font-bold text-gray-900">More Than Just Waffles</p>
                 <p className="text-gray-800">From Yummi Waffles To HappiJoy Brands</p>
               </div>
             </div>
@@ -158,9 +158,9 @@ const AboutPage = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
               <img
-                src="/images/Sweet-box-or-Savory-box.jpg"
+                src="/images/happijoy-favicon.png"
                 alt="HappiJoy Waffle Box Menu"
-                className="w-full rounded-3xl shadow-xl"
+                className="w-auto rounded-3xl shadow-xl"
               />
             </div>
             <div className="order-1 lg:order-2">

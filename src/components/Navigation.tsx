@@ -36,11 +36,11 @@ const Navigation = ({ currentPage, navigateTo, isScrolled }: NavigationProps) =>
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-lg py-3'
-          : 'bg-transparent py-5'
+          ? 'bg-white/95 backdrop-blur-md shadow-lg py-1'
+          : 'bg-transparent '
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 mb-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <button
@@ -63,9 +63,9 @@ const Navigation = ({ currentPage, navigateTo, isScrolled }: NavigationProps) =>
               </span>
             </div> */}
             <img
-              src="/images/happijoy-brands-teal-logo-2.png"
+              src="/images/happijoy-brands-teal-logo-text.png"
               alt="HappiJoy Brands"
-              className="w-15 h-20 object-cover"
+              className="w-15 h-20 object-cover py-2"
             />
           </button>
 
