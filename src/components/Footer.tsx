@@ -46,13 +46,13 @@ const Footer = ({ navigateTo }: FooterProps) => {
               onClick={() => navigateTo('home')}
               className="flex items-center gap-3 mb-6"
             >
-              <div className="w-14 h-14 bg-[#ffc107] rounded-full flex items-center justify-center overflow-hidden">
+              {/* <div className="w-14 h-14 bg-[#ffc107] rounded-full flex items-center justify-center overflow-hidden"> */}
                 <img
                   src="/images/happijoy-brands-teal-logo.png"
                   alt="HappiJoy Waffles"
                   className="w-12 h-12 object-contain"
                 />
-              </div>
+              {/* </div> */}
               <div className="text-left">
                 <span className="font-bold text-xl text-[#ffc107] block">HappiJoy</span>
                 <span className="text-sm text-gray-300">Brands</span>
