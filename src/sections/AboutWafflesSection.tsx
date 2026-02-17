@@ -59,8 +59,8 @@ const AboutWafflesSection = () => {
             
             {/* Experience Badge */}
             <div className="absolute bottom-8 -right-4 bg-[#1a9b8a] text-white rounded-2xl p-6 shadow-xl">
-              <p className="text-4xl font-bold">12+</p>
-              <p className="text-sm opacity-90">Years of<br />Experience</p>
+              <p className="text-4xl font-bold">Over 1,000</p>
+              <p className="text-sm opacity-90">Tasty Waffles<br />Sold</p>
             </div>
           </div>
 
