@@ -103,7 +103,7 @@ const AboutPage = () => {
             </div>
             <div className="relative">
               <img
-                src="/images/from-yummi-to-happi-2.png"
+                src="/images/yummi-to-happijoy.png"
                 alt="HappiJoy Waffles Products"
                 className="w-full rounded-3xl shadow-xl"
               />
@@ -255,9 +255,9 @@ const AboutPage = () => {
                     <Users className="w-6 h-6 text-gray-900" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Family Recipe</h3>
+                    <h3 className="font-semibold text-gray-900 mb-1">Premium Flavors</h3>
                     <p className="text-gray-600 text-sm">
-                      Our recipes are crafted with love and passed down through generations.
+                      Our recipes are crafted with the finest spices and ingredients that burst with flavor.
                     </p>
                   </div>
                 </div>

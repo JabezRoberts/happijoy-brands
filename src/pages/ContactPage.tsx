@@ -71,8 +71,8 @@ const ContactPage = () => {
     {
       icon: Mail,
       title: 'Email Us',
-      content: 'happijoybrands@gmail.com',
-      href: 'mailto:happijoybrands@gmail.com',
+      content: 'happijoybrandslimited@gmail.com',
+      href: 'mailto:happijoybrandslimited@gmail.com',
     },
     {
       icon: MapPin,

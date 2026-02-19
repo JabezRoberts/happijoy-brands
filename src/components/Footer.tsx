@@ -158,8 +158,8 @@ const Footer = ({ navigateTo }: FooterProps) => {
                 <Mail className="w-5 h-5 text-[#1a9b8a] mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-sm text-gray-400">Email Us</p>
-                  <a href="mailto:happijoybrands@gmail.com" className="text-white hover:text-[#ffc107] transition-colors text-sm">
-                    happijoybrands@gmail.com
+                  <a href="mailto:happijoybrandslimited@gmail.com" className="text-white hover:text-[#ffc107] transition-colors text-sm">
+                    happijoybrandslimited@gmail.com
                   </a>
                 </div>
               </li>
