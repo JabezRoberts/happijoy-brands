@@ -80,7 +80,7 @@ const EventDetailMarch2026 = ({ navigateTo }: EventDetailPageProps) => {
                 onClick={() => navigateTo('contact')}
                 size="lg"
                 variant="outline"
-                className="border-2 border-white text-white hover:bg-white hover:text-gray-900 font-bold rounded-full px-10"
+                className="border-2 border-white hover:bg-white hover:text-[#1a9b8a] font-bold rounded-full text-lg text-black"
               >
                 <Phone className="w-5 h-5 mr-2" />
                 Contact Us

@@ -19,7 +19,7 @@ const PopupEventSection = ({ navigateTo }: PopupEventSectionProps) => {
           <div>
             <div className="inline-flex items-center gap-2 bg-[#ffc107] text-gray-900 px-4 py-2 rounded-full text-sm font-bold mb-6">
               <Calendar className="w-4 h-4" />
-              <span>Special Event Coming Soon!</span>
+              <span>Our Next Popup Event Is Coming Soon!</span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
@@ -28,9 +28,10 @@ const PopupEventSection = ({ navigateTo }: PopupEventSectionProps) => {
             </h2>
 
             <p className="text-gray-300 text-lg mb-8 leading-relaxed">
-              Get ready for our first ever waffle box pop-up event! Choose between 
-              our Sweet Box or Savory Box, each packed with delicious waffles, 
-              chicken bites, mac & cheese, coleslaw, sauces, and grapes.
+              Build your own waffle experience with the HappiJoy Waffle Box. Mix sweet and savory flavors to create a box that’s made just the way you like it.
+            </p>
+            <p className="text-gray-300 text-lg mb-8 leading-relaxed">
+              Whether you're ordering for yourself, surprising someone, or sharing with a friend, this limited waffle box is packed with bold flavors and comforting favorites.
             </p>
 
             {/* Event Details */}
@@ -41,7 +42,7 @@ const PopupEventSection = ({ navigateTo }: PopupEventSectionProps) => {
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">Date</p>
-                  <p className="text-lg font-semibold">February 24, 2026</p>
+                  <p className="text-lg font-semibold">March 25, 2026</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -50,7 +51,7 @@ const PopupEventSection = ({ navigateTo }: PopupEventSectionProps) => {
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">Order Deadline</p>
-                  <p className="text-lg font-semibold">February 18, 2026</p>
+                  <p className="text-lg font-semibold">March 20, 2026</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -59,13 +60,13 @@ const PopupEventSection = ({ navigateTo }: PopupEventSectionProps) => {
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">Price</p>
-                  <p className="text-lg font-semibold">$2,500 for Any Waffle Box</p>
+                  <p className="text-lg font-semibold">$3,500 for Any Waffle Box</p>
                 </div>
               </div>
             </div>
 
             <Button
-              onClick={() => navigateTo('popup-event')}
+              onClick={() => navigateTo('events-list')}
               size="lg"
               className="bg-[#ffc107] hover:bg-[#e6ac00] text-gray-900 font-bold rounded-full px-8"
             >
@@ -85,7 +86,7 @@ const PopupEventSection = ({ navigateTo }: PopupEventSectionProps) => {
             {/* Price Tag */}
             <div className="absolute -bottom-6 -left-6 bg-[#ffc107] text-gray-900 rounded-2xl p-6 shadow-xl">
               <p className="text-sm font-medium">Only</p>
-              <p className="text-4xl font-bold">$2,500</p>
+              <p className="text-4xl font-bold">$3,500</p>
               <p className="text-sm">per box</p>
             </div>
           </div>
