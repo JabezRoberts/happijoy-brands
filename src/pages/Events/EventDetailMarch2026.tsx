@@ -8,19 +8,22 @@ interface EventDetailPageProps {
 
 const EventDetailMarch2026 = ({ navigateTo }: EventDetailPageProps) => {
   const waffles = [
-    'Coconut Pistachio',
-    'Vanilla',
-    'Cheddar Herb',
-    'Scotch Bonnet Surprise',
+    { name: 'Coconut Pistachio', image: '/images/march-waffles-coconut-pistachio.jpg' },
+    { name: 'Vanilla', image: '/images/march-waffles-vanilla.jpg' },
+    { name: 'Cheddar Herb', image: '/images/march-waffles-cheddar-herb.jpg' },
+    { name: 'Scotch Bonnet Surprise', image: '/images/march-waffles-scotch-bonnet.jpg' },
   ]
 
-  const chickenOptions = ['BBQ', 'Original']
+  const chickenOptions = [
+    { name: 'BBQ', image: '/images/march-chicken-bbq.jpg' },
+    { name: 'Original', image: '/images/march-chicken-original.jpg' },
+  ]
 
   const sauces = [
-    'Sorrel Syrup',
-    'Rum Sauce',
-    'Citrus Spicy Aioli',
-    'Cinnamon Maple Syrup',
+    { name: 'Sorrel Syrup', image: '/images/march-sauce-sorrel.jpg' },
+    { name: 'Rum Sauce', image: '/images/march-sauce-rum.jpg' },
+    { name: 'Citrus Spicy Aioli', image: '/images/march-sauce-citrus-aioli.jpg' },
+    { name: 'Cinnamon Maple Syrup', image: '/images/march-sauce-cinnamon-maple.jpg' },
   ]
 
   const juices = [
@@ -35,6 +38,10 @@ const EventDetailMarch2026 = ({ navigateTo }: EventDetailPageProps) => {
     { name: 'Waffles', price: '$500' },
     { name: 'Sauce', price: '$300' },
   ]
+
+  const goLargeImage = '/images/march-large-box-sharing.jpg'
+
+  // Replace the placeholder image paths above with your actual file paths
 
   return (
     <div className="pt-20">
@@ -128,106 +135,171 @@ const EventDetailMarch2026 = ({ navigateTo }: EventDetailPageProps) => {
         </div>
       </section>
 
-      {/* What's Included / Choices */}
+      {/* Enhanced What's Included / Choices */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-16">
-            {/* Core Items */}
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {[
-                { icon: Soup, name: 'Mac and Cheese', desc: '(Non-baked)', color: '#ffc107' },
-                { icon: Apple, name: 'An Apple', desc: 'Fresh & crisp', color: '#1a9b8a' },
-              ].map((item, i) => (
-                <div key={i} className="bg-gray-50 rounded-2xl p-6 text-center hover:bg-[#1a9b8a]/5 transition-colors">
-                  <div className={`w-16 h-16 bg-[${item.color}]/20 rounded-full flex items-center justify-center mx-auto mb-4`}>
-                    <item.icon className={`w-8 h-8 text-[${item.color}]`} />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+          {/* Core Items */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { icon: Soup, name: 'Mac and Cheese', desc: '(Non-baked)', color: '#ffc107' },
+              { icon: Apple, name: 'An Apple', desc: 'Fresh & crisp', color: '#1a9b8a' },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="bg-gray-50 rounded-3xl p-8 text-center hover:shadow-xl transition-all duration-300"
+              >
+                <div className={`w-20 h-20 bg-[${item.color}]/10 rounded-full flex items-center justify-center mx-auto mb-6`}>
+                  <item.icon className={`w-10 h-10 text-[${item.color}]`} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">{item.name}</h3>
+                <p className="text-gray-600">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Waffles – Image Showcase */}
+          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#fff9e6] to-[#e6f7f5] p-8 lg:p-12">
+            <div className="text-center mb-10">
+              <h3 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Choose Your Waffles</h3>
+              <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+                Pick any 2 flavors — from creamy classics to bold island heat.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {waffles.map((waffle) => (
+                <div
+                  key={waffle.name}
+                  className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 bg-white"
+                >
+                  <div className="aspect-[4/3] overflow-hidden">
+                    <img
+                      src={waffle.image}
+                      alt={waffle.name}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      loading="lazy"
+                    />
                   </div>
-                  <h3 className="font-semibold text-gray-900 mb-2">{item.name}</h3>
-                  <p className="text-gray-600 text-sm">{item.desc}</p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <h4 className="text-white text-xl font-bold drop-shadow-md">{waffle.name}</h4>
+                  </div>
                 </div>
               ))}
             </div>
+          </div>
 
-            {/* Waffles */}
-            <div className="bg-[#1a9b8a]/5 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Choose Your Waffles</h3>
-              <p className="text-center text-gray-600 mb-6">Pick any 2 flavors</p>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                {waffles.map((waffle) => (
-                  <div key={waffle} className="bg-white rounded-xl p-4 text-center shadow-sm">
-                    <p className="font-medium text-gray-900">{waffle}</p>
-                  </div>
-                ))}
-              </div>
-              <p className="text-center text-gray-600 mt-6 italic">
-                From classic comfort to bold island flavors, every waffle brings something unique.
-              </p>
-            </div>
-
-            {/* Chicken */}
-            <div className="bg-[#ffc107]/5 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Choose Your Chicken Strips</h3>
-              <p className="text-center text-gray-600 mb-6">Pick 1</p>
-              <div className="flex flex-wrap justify-center gap-4">
+          {/* Chicken Strips – Side-by-side with description */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <div className="grid grid-cols-2 gap-6">
                 {chickenOptions.map((option) => (
-                  <span key={option} className="bg-white px-6 py-3 rounded-full font-medium shadow-sm">
-                    {option}
-                  </span>
-                ))}
-              </div>
-              <p className="text-center text-gray-600 mt-6">
-                Crispy chicken strips that balance perfectly with both sweet and savory waffles.
-              </p>
-            </div>
-
-            {/* Sauce */}
-            <div className="bg-[#1a9b8a]/5 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Choose Your Sauce</h3>
-              <p className="text-center text-gray-600 mb-6">Pick 1</p>
-              <div className="flex flex-wrap justify-center gap-3">
-                {sauces.map((sauce) => (
-                  <span key={sauce} className="bg-white px-5 py-2 rounded-full font-medium shadow-sm">
-                    {sauce}
-                  </span>
-                ))}
-              </div>
-              <p className="text-center text-gray-600 mt-6">
-                Each sauce is crafted to complement your waffle combination.
-              </p>
-            </div>
-
-            {/* Juice */}
-            <div className="bg-[#ffc107]/5 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Choose Your Fresh Juice</h3>
-              <p className="text-center text-gray-600 mb-6">Pick 1</p>
-              <div className="flex flex-wrap justify-center gap-4">
-                {juices.map((juice) => (
-                  <span key={juice} className="bg-white px-6 py-3 rounded-full font-medium shadow-sm">
-                    {juice}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* Extras */}
-            <div className="text-center">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Extras</h3>
-              <p className="text-gray-600 mb-8">Want to add a little more?</p>
-              <div className="flex flex-wrap justify-center gap-4">
-                {extras.map((extra, i) => (
-                  <div key={i} className="bg-gray-100 rounded-xl px-6 py-4 min-w-[180px]">
-                    <span className="font-medium text-gray-900 block">{extra.name}</span>
-                    <span className="text-[#1a9b8a] font-bold">{extra.price}</span>
+                  <div
+                    key={option.name}
+                    className="overflow-hidden rounded-3xl shadow-xl"
+                  >
+                    <img
+                      src={option.image}
+                      alt={option.name}
+                      className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                    />
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Large Option */}
-            <div className="bg-gradient-to-r from-[#1a9b8a] to-[#148a7a] rounded-3xl p-10 text-white text-center">
-              <h3 className="text-3xl font-bold mb-4">Go Large</h3>
-              <p className="text-2xl font-bold mb-2">Large Waffle Box — $6,500</p>
-              <p className="text-lg opacity-90">Serves 2 • Perfect for sharing with a friend, partner, or family member.</p>
+            <div className="order-1 lg:order-2 text-center lg:text-left">
+              <h3 className="text-3xl font-bold text-gray-900 mb-6">Choose Your Chicken Strips</h3>
+              <p className="text-lg text-gray-600 mb-4">Pick 1 style</p>
+              <p className="text-gray-700 leading-relaxed">
+                Crispy, golden chicken strips that balance perfectly with both sweet and savory waffles.
+              </p>
+              <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
+                {chickenOptions.map((opt) => (
+                  <span
+                    key={opt.name}
+                    className="bg-[#1a9b8a]/10 px-6 py-3 rounded-full font-medium text-[#1a9b8a] shadow-sm"
+                  >
+                    {opt.name}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Sauces – Grid with images */}
+          <div className="bg-[#1a9b8a]/5 rounded-3xl p-8 lg:p-12">
+            <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Choose Your Sauce</h3>
+            <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
+              Pick 1 — each one crafted to elevate your custom combination.
+            </p>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              {sauces.map((sauce) => (
+                <div key={sauce.name} className="text-center group">
+                  <div className="overflow-hidden rounded-2xl shadow-lg mb-4 aspect-square">
+                    <img
+                      src={sauce.image}
+                      alt={sauce.name}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      loading="lazy"
+                    />
+                  </div>
+                  <h4 className="font-semibold text-gray-900 text-lg">{sauce.name}</h4>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Juice */}
+          <div className="bg-[#ffc107]/5 rounded-3xl p-10 text-center">
+            <h3 className="text-3xl font-bold text-gray-900 mb-6">Choose Your Fresh Juice</h3>
+            <p className="text-lg text-gray-600 mb-8">Pick 1 refreshing drink to complete your box.</p>
+            <div className="flex flex-wrap justify-center gap-6">
+              {juices.map((juice) => (
+                <span
+                  key={juice}
+                  className="bg-white px-8 py-4 rounded-full font-medium shadow-md text-lg text-gray-900"
+                >
+                  {juice}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Extras */}
+          <div className="text-center">
+            <h3 className="text-3xl font-bold text-gray-900 mb-8">Extras</h3>
+            <p className="text-xl text-gray-600 mb-10">Want to add a little more?</p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {extras.map((extra, i) => (
+                <div
+                  key={i}
+                  className="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-xl transition-all"
+                >
+                  <h4 className="font-bold text-xl text-gray-900 mb-2">{extra.name}</h4>
+                  <p className="text-2xl font-bold text-[#1a9b8a]">{extra.price}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Go Large – Hero Image */}
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+            <img
+              src={goLargeImage}
+              alt="Large Waffle Box for sharing"
+              className="w-full h-[500px] lg:h-[600px] object-cover"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end">
+              <div className="p-10 lg:p-16 text-white max-w-3xl">
+                <h3 className="text-4xl lg:text-5xl font-bold mb-4">Go Large</h3>
+                <p className="text-2xl lg:text-3xl font-bold mb-3">Large Waffle Box — $6,500</p>
+                <p className="text-xl lg:text-2xl opacity-90">
+                  Serves 2 • Perfect for sharing with a friend, partner, or family member.
+                </p>
+              </div>
             </div>
           </div>
         </div>
