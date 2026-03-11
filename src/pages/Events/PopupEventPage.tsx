@@ -1,6 +1,6 @@
 import { Calendar, Clock, MapPin, Phone, MessageCircle, ArrowRight, Check, Utensils, Grape, Soup, Salad } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import type { Page } from '../App'
+import type { Page } from '../../App'
 
 interface PopupEventPageProps {
   navigateTo: (page: Page) => void

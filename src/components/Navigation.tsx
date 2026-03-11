@@ -12,13 +12,18 @@ interface NavigationProps {
 const Navigation = ({ currentPage, navigateTo, isScrolled }: NavigationProps) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isBrandsOpen, setIsBrandsOpen] = useState(false)
+  const [isEventsOpen, setIsEventsOpen] = useState(false) // New state for Events dropdown
 
   const navLinks: { label: string; page: Page }[] = [
     { label: 'Home', page: 'home' },
     { label: 'About', page: 'about' },
     { label: 'Products', page: 'products' },
-    { label: 'Pop-Up Event', page: 'popup-event' },
     { label: 'Contact', page: 'contact' },
+  ]
+
+  const popupEventsSubmenu: { label: string; page: Page }[] = [
+    { label: 'February 2026 Pop-Up', page: 'popup-event' },
+    { label: 'March 2026', page: 'event-march-2026' },
   ]
 
   const brandLinks: { label: string; page: Page }[] = [
@@ -30,6 +35,7 @@ const Navigation = ({ currentPage, navigateTo, isScrolled }: NavigationProps) =>
     navigateTo(page)
     setIsMobileMenuOpen(false)
     setIsBrandsOpen(false)
+    setIsEventsOpen(false)
   }
 
   return (
@@ -47,25 +53,10 @@ const Navigation = ({ currentPage, navigateTo, isScrolled }: NavigationProps) =>
             onClick={() => handleNavClick('home')}
             className="flex items-center gap-2 group"
           >
-            {/* <div className="w-12 h-12 bg-[#000000] rounded-full flex items-center justify-center overflow-hidden">
-              <img
-                src="/images/happijoy-brands-teal-logo.png"
-                alt="HappiJoy Brands"
-                className="w-12 h-12 object-cover"
-              />
-            </div>
-            <div className="hidden sm:block text-left">
-              <span className={`font-bold text-lg leading-tight block ${isScrolled ? 'text-[#1a9b8a]' : 'text-[#1a9b8a]'}`}>
-                HappiJoy
-              </span>
-              <span className={`text-xs block ${isScrolled ? 'text-gray-600' : 'text-gray-700'}`}>
-                Brands
-              </span>
-            </div> */}
             <img
               src="/images/happijoy-brands-teal-logo-text.png"
               alt="HappiJoy Brands"
-              className="w-15 h-20 object-cover py-2"
+              className="w-40 h-auto object-contain py-2"
             />
           </button>
 
@@ -86,13 +77,55 @@ const Navigation = ({ currentPage, navigateTo, isScrolled }: NavigationProps) =>
                 {link.label}
               </button>
             ))}
-            
+
+            {/* Popup Events Dropdown – NEW */}
+            <div className="relative">
+              <button
+                onClick={() => setIsEventsOpen(!isEventsOpen)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 flex items-center gap-1 ${
+                  isEventsOpen ||
+                  popupEventsSubmenu.some((l) => l.page === currentPage) ||
+                  currentPage === 'events-list'
+                    ? 'bg-[#1a9b8a]/10 text-[#1a9b8a]'
+                    : isScrolled
+                    ? 'text-gray-700 hover:bg-[#1a9b8a]/10 hover:text-[#1a9b8a]'
+                    : 'text-gray-800 hover:bg-white/20 hover:text-[#1a9b8a]'
+                }`}
+              >
+                Popup Events
+                <ChevronDown className={`w-4 h-4 transition-transform ${isEventsOpen ? 'rotate-180' : ''}`} />
+              </button>
+
+              {isEventsOpen && (
+                <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-lg py-2 border border-gray-100">
+                  {/* Link to the main Events overview page */}
+                  <button
+                    onClick={() => handleNavClick('events-list')}
+                    className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-[#1a9b8a]/10 hover:text-[#1a9b8a] transition-colors font-medium border-b border-gray-100 pb-3 mb-1"
+                  >
+                    All Popup Events
+                  </button>
+
+                  {/* Submenu items */}
+                  {popupEventsSubmenu.map((link) => (
+                    <button
+                      key={link.page}
+                      onClick={() => handleNavClick(link.page)}
+                      className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-[#1a9b8a]/10 hover:text-[#1a9b8a] transition-colors"
+                    >
+                      {link.label}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+
             {/* Brands Dropdown */}
             <div className="relative">
               <button
                 onClick={() => setIsBrandsOpen(!isBrandsOpen)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 flex items-center gap-1 ${
-                  isBrandsOpen || brandLinks.some(l => l.page === currentPage)
+                  isBrandsOpen || brandLinks.some((l) => l.page === currentPage)
                     ? 'bg-[#1a9b8a]/10 text-[#1a9b8a]'
                     : isScrolled
                     ? 'text-gray-700 hover:bg-[#1a9b8a]/10 hover:text-[#1a9b8a]'
@@ -102,7 +135,7 @@ const Navigation = ({ currentPage, navigateTo, isScrolled }: NavigationProps) =>
                 Our Brands
                 <ChevronDown className={`w-4 h-4 transition-transform ${isBrandsOpen ? 'rotate-180' : ''}`} />
               </button>
-              
+
               {isBrandsOpen && (
                 <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-xl shadow-lg py-2 border border-gray-100">
                   {brandLinks.map((link) => (
@@ -169,10 +202,30 @@ const Navigation = ({ currentPage, navigateTo, isScrolled }: NavigationProps) =>
                   {link.label}
                 </button>
               ))}
-              
+
+              {/* Mobile Popup Events */}
+              <div className="px-4 py-2">
+                <p className="text-sm text-gray-500 mb-2 font-medium">Popup Events</p>
+                <button
+                  onClick={() => handleNavClick('events-list')}
+                  className="block w-full text-left py-2 pl-4 text-gray-700 hover:text-[#1a9b8a]"
+                >
+                  All Popup Events
+                </button>
+                {popupEventsSubmenu.map((link) => (
+                  <button
+                    key={link.page}
+                    onClick={() => handleNavClick(link.page)}
+                    className="block w-full text-left py-2 pl-8 text-gray-700 hover:text-[#1a9b8a]"
+                  >
+                    {link.label}
+                  </button>
+                ))}
+              </div>
+
               {/* Mobile Brands */}
               <div className="px-4 py-2">
-                <p className="text-sm text-gray-500 mb-2">Our Brands</p>
+                <p className="text-sm text-gray-500 mb-2 font-medium">Our Brands</p>
                 {brandLinks.map((link) => (
                   <button
                     key={link.page}
@@ -183,7 +236,7 @@ const Navigation = ({ currentPage, navigateTo, isScrolled }: NavigationProps) =>
                   </button>
                 ))}
               </div>
-              
+
               <div className="pt-4 border-t border-gray-200/50 mt-2">
                 <a
                   href="tel:+18763165022"

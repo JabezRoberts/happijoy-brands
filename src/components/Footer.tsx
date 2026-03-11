@@ -12,6 +12,7 @@ const Footer = ({ navigateTo }: FooterProps) => {
     { label: 'Home', page: 'home' as Page },
     { label: 'About Us', page: 'about' as Page },
     { label: 'Our Products', page: 'products' as Page },
+    { label: 'Events', page: 'events-list' as Page }, // ← NEW: Events overview
     { label: 'Pop-Up Event', page: 'popup-event' as Page },
     { label: 'Contact', page: 'contact' as Page },
   ]
@@ -22,7 +23,7 @@ const Footer = ({ navigateTo }: FooterProps) => {
   ]
 
   const helpLinks = [
-    { label: 'FAQ', page: 'FAQPage' as Page },
+    { label: 'FAQ', page: 'faq' as Page }, // ← Fixed: was 'FAQPage'
     { label: 'Delivery Info', page: 'delivery' as Page },
     { label: 'Returns & Exchanges', page: 'returns' as Page },
     { label: 'Cancellation Policy', page: 'cancellation' as Page },
@@ -44,19 +45,13 @@ const Footer = ({ navigateTo }: FooterProps) => {
           <div className="lg:col-span-1">
             <button
               onClick={() => navigateTo('home')}
-              className="flex items-center gap-3 mb-6"
+              className="flex items-center justify-center mb-6"
             >
-              {/* <div className="w-14 h-14 bg-[#ffc107] rounded-full flex items-center justify-center overflow-hidden"> */}
-                <img
-                  src="/images/happijoy-brands-teal-logo-2.png"
-                  alt="HappiJoy Waffles"
-                  className="w-auto h-auto object-cover"
-                />
-              {/* </div> */}
-              {/* <div className="text-left">
-                <span className="font-bold text-xl text-[#ffc107] block">HappiJoy</span>
-                <span className="text-sm text-gray-300">Brands</span>
-              </div> */}
+              <img
+                src="/images/happijoy-brands-teal-logo-2.png"
+                alt="HappiJoy Brands"
+                className="w-32 h-auto object-contain"
+              />
             </button>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               A Family of Flavor & Fun. Bringing joy to every bite with our 
