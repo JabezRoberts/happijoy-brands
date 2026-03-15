@@ -65,10 +65,10 @@ const FAQPage = () => {
           </a>
           , Email:{' '}
           <a
-            href="mailto:happijoywafflesjalimited@gmail.com"
+            href="mailto:happijoybrandslimited@gmail.com"
             className="text-[#1a9b8a] font-medium hover:underline"
           >
-            happijoywafflesjalimited@gmail.com
+            happijoybrandslimited@gmail.com
           </a>
           , or DM us on Instagram{' '}
           <a
