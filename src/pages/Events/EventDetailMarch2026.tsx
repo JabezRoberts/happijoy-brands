@@ -8,22 +8,22 @@ interface EventDetailPageProps {
 
 const EventDetailMarch2026 = ({ navigateTo }: EventDetailPageProps) => {
   const waffles = [
-    { name: 'Coconut Pistachio', image: '/images/march-waffles-coconut-pistachio.jpg' },
-    { name: 'Vanilla', image: '/images/march-waffles-vanilla.jpg' },
-    { name: 'Cheddar Herb', image: '/images/march-waffles-cheddar-herb.jpg' },
-    { name: 'Scotch Bonnet Surprise', image: '/images/march-waffles-scotch-bonnet.jpg' },
+    { name: 'Coconut Pistachio', image: "/images/February 2026 Popup/coconut-pistachio-box.jpg" }, 
+    { name: 'Vanilla', image: "/images/February 2026 Popup/vanilla-box.jpg" },
+    { name: 'Cheddar Herb', image: "/images/February 2026 Popup/cheddar-herb-box.jpg" },
+    { name: 'Scotch Bonnet Surprise', image: "/images/February 2026 Popup/cheddar-herb-box.jpg" },
   ]
 
   const chickenOptions = [
-    { name: 'BBQ', image: '/images/march-chicken-bbq.jpg' },
-    { name: 'Original', image: '/images/march-chicken-original.jpg' },
+    { name: 'BBQ', image: "/images/February 2026 Popup/chicken-bites.jpg" },
+    { name: 'Original', image: "/images/February 2026 Popup/chicken-bite-cups.jpg" },
   ]
 
   const sauces = [
-    { name: 'Sorrel Syrup', image: '/images/march-sauce-sorrel.jpg' },
-    { name: 'Rum Sauce', image: '/images/march-sauce-rum.jpg' },
-    { name: 'Citrus Spicy Aioli', image: '/images/march-sauce-citrus-aioli.jpg' },
-    { name: 'Cinnamon Maple Syrup', image: '/images/march-sauce-cinnamon-maple.jpg' },
+    { name: 'Sorrel Syrup', image: "/images/February 2026 Popup/sauces.jpg" },
+    { name: 'Rum Sauce', image: "/images/February 2026 Popup/sauce-rum-cream.jpg" },
+    { name: 'Citrus Spicy Aioli', image: "/images/February 2026 Popup/sauce-spicy-citus-aioli.jpg" },
+    { name: 'Cinnamon Maple Syrup', image: "/images/February 2026 Popup/sauces.jpg" },
   ]
 
   const juices = [
@@ -39,7 +39,7 @@ const EventDetailMarch2026 = ({ navigateTo }: EventDetailPageProps) => {
     { name: 'Sauce', price: '$300' },
   ]
 
-  const goLargeImage = '/images/march-large-box-sharing.jpg'
+  const goLargeImage = "/images/happijoy-waffles-savory-box.jpg"
 
   // Replace the placeholder image paths above with your actual file paths
 
@@ -289,7 +289,7 @@ const EventDetailMarch2026 = ({ navigateTo }: EventDetailPageProps) => {
             <img
               src={goLargeImage}
               alt="Large Waffle Box for sharing"
-              className="w-full h-[500px] lg:h-[600px] object-cover"
+              className="w-full h-[500px] lg:h-[800px] object-cover"
               loading="lazy"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end">

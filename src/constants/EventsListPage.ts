@@ -11,7 +11,7 @@ export const events = [
       badge: 'Next Event',
       badgeColor: 'bg-[#1a9b8a]',
       description: 'Build your own customizable waffle box with sweet & savory options, chicken strips, sauce, and fresh juice.',
-      image: '/images/happijoy-waffle-box-march.jpg', // placeholder – replace with real promo image
+      image: "/images/happijoy-waffles-sweet-box.jpg",
       detailPage: 'event-march-2026' as Page,
     },
     {
@@ -24,7 +24,7 @@ export const events = [
       badge: 'Past Event',
       badgeColor: 'bg-red-600',
       description: 'Our first limited pop-up with Sweet & Savory boxes, signature sides, and bold Jamaican flavors.',
-      image: '/images/happijoy-waffle-box-feb.jpg', // use your existing event image
+      image: "/images/happijoy-waffles-savory-box.jpg",
       detailPage: 'popup-event' as Page, // links back to your original page
     },
     // Add more past/upcoming events here as needed
