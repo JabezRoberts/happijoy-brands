@@ -78,7 +78,7 @@ const PopupEventSection = ({ navigateTo }: PopupEventSectionProps) => {
           {/* Event Image */}
           <div className="relative">
             <img
-              src="/images/Sweet-box-or-Savory-box.jpg"
+              src="/images/march-waffle-event.jpg"
               alt="HappiJoy Waffle Box Pop-Up Event"
               className="w-full rounded-3xl shadow-2xl"
             />
