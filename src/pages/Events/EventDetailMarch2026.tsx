@@ -100,7 +100,7 @@ const EventDetailMarch2026 = ({ navigateTo }: EventDetailPageProps) => {
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">Event Date</h3>
               <p className="text-2xl font-bold text-[#1a9b8a]">March 25, 2026</p>
-              <p className="text-sm text-gray-500 mt-1">Delivery Day</p>
+              <p className="text-sm text-gray-500 mt-1">(Also Delivery Day)</p>
             </div>
 
             <div className="bg-white rounded-2xl p-6 shadow-lg text-center">
