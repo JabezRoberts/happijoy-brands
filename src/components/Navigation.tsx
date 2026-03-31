@@ -24,6 +24,7 @@ const Navigation = ({ currentPage, navigateTo, isScrolled }: NavigationProps) =>
   const popupEventsSubmenu: { label: string; page: Page }[] = [
     { label: 'February 2026 Pop-Up', page: 'popup-event' },
     { label: 'March 2026', page: 'event-march-2026' },
+    { label: 'April 2026', page: 'event-april-2026' },
   ]
 
   const brandLinks: { label: string; page: Page }[] = [

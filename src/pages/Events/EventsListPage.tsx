@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button'
 import type { EventsListPageProps } from '@/types'
 import { events } from '@/constants'
 
-export const EventsListPage = ({ navigateTo }: EventsListPageProps) => {
+const EventsListPage = ({ navigateTo }: EventsListPageProps) => {
     return (
         <div className="pt-20">
             <section className="relative py-20 bg-gradient-to-br from-[#fff9e6] to-[#e6f7f5]">
@@ -94,3 +94,4 @@ export const EventsListPage = ({ navigateTo }: EventsListPageProps) => {
 }
 
 
+export default EventsListPage;

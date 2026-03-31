@@ -9,7 +9,8 @@ import ProductsPage from './pages/ProductsPage'
 import ProductDetailPage from './pages/ProductDetailPage'
 import PopupEventPage from './pages/Events/PopupEventPage'           // February event
 import EventDetailMarch2026 from './pages/Events/EventDetailMarch2026' // March event
-import { EventsListPage } from './pages/Events/EventsListPage'            // Events overview
+import EventDetailApril2026 from './pages/Events/April2026'           // April event
+import EventsListPage from './pages/Events/EventsListPage'            // Events overview
 import TestimonialsPage from './pages/TestimonialsPage'
 import FoodMoodPage from './pages/FoodMoodPage'
 import HappiJoyWafflesPage from './pages/HappiJoyWafflesPage'
@@ -33,6 +34,7 @@ export type Page =
   | 'popup-event'               // February 2026 Pop-Up
   | 'events-list'               // Main events overview page
   | 'event-march-2026'          // March 2026 detail page
+  | 'event-april-2026'          // ← April 2026 added here
   | 'testimonials'
   | 'foodmood'
   | 'happijoy-waffles'
@@ -56,9 +58,9 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // Improved: set initial page from URL on mount (no flash), and handle back/forward
+  // Improved: set initial page from URL on mount (no flash)
   const getPageFromPath = (path: string): Page => {
-    const cleanPath = path.replace(/^\/|\/$/g, '') // remove leading/trailing slashes
+    const cleanPath = path.replace(/^\/|\/$/g, '')
 
     if (!cleanPath) return 'home'
     if (cleanPath === 'about') return 'about'
@@ -70,6 +72,7 @@ function App() {
     if (cleanPath === 'popup-event') return 'popup-event'
     if (cleanPath === 'events-list') return 'events-list'
     if (cleanPath === 'event-march-2026') return 'event-march-2026'
+    if (cleanPath === 'event-april-2026') return 'event-april-2026'   // ← Added
     if (cleanPath === 'testimonials') return 'testimonials'
     if (cleanPath === 'foodmood') return 'foodmood'
     if (cleanPath === 'happijoy-waffles') return 'happijoy-waffles'
@@ -81,7 +84,6 @@ function App() {
     if (cleanPath === 'allergy') return 'allergy'
     if (cleanPath === 'disclaimer') return 'disclaimer'
 
-    // Fallback
     return 'home'
   }
 
@@ -92,8 +94,7 @@ function App() {
     }
 
     window.addEventListener('popstate', handlePopState)
-    // Set correct page immediately on mount (no flash to home)
-    handlePopState()
+    handlePopState() // Set correct page on mount
 
     return () => window.removeEventListener('popstate', handlePopState)
   }, [])
@@ -130,6 +131,8 @@ function App() {
         return <EventsListPage navigateTo={navigateTo} />
       case 'event-march-2026':
         return <EventDetailMarch2026 navigateTo={navigateTo} />
+      case 'event-april-2026':
+        return <EventDetailApril2026 navigateTo={navigateTo} />   // ← Fixed import name
       case 'testimonials':
         return <TestimonialsPage />
       case 'foodmood':

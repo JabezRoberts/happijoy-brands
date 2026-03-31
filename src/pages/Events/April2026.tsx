@@ -6,42 +6,38 @@ interface EventDetailPageProps {
   navigateTo: (page: Page) => void
 }
 
-const EventDetailMarch2026 = ({ navigateTo }: EventDetailPageProps) => {
+const EventDetailApril2026 = ({ navigateTo }: EventDetailPageProps) => {
   const waffles = [
-    { name: 'Coconut Pistachio', image: "/images/February 2026 Popup/coconut-pistachio-box.jpg" }, 
-    { name: 'Vanilla', image: "/images/February 2026 Popup/vanilla-box.jpg" },
-    { name: 'Cheddar Herb', image: "/images/February 2026 Popup/cheddar-herb-box.jpg" },
-    { name: 'Scotch Bonnet Surprise', image: "/images/February 2026 Popup/cheddar-herb-box.jpg" },
+    { name: 'Coconut Pistachio', image: '/images/april-waffles-coconut-pistachio.jpg' },
+    { name: 'Cheddar Herb', image: '/images/april-waffles-cheddar-herb.jpg' },
+    { name: 'Scotch Bonnet Surprise', image: '/images/april-waffles-scotch-bonnet.jpg' },
   ]
 
   const chickenOptions = [
-    { name: 'BBQ', image: "/images/February 2026 Popup/chicken-bites.jpg" },
-    { name: 'Original', image: "/images/February 2026 Popup/chicken-bite-cups.jpg" },
+    { name: 'BBQ', image: '/images/april-chicken-bbq.jpg' },
+    { name: 'Original', image: '/images/april-chicken-original.jpg' },
   ]
 
   const sauces = [
-    { name: 'Sorrel Syrup', image: "/images/February 2026 Popup/sauces.jpg" },
-    { name: 'Rum Sauce', image: "/images/February 2026 Popup/sauce-rum-cream.jpg" },
-    { name: 'Citrus Spicy Aioli', image: "/images/February 2026 Popup/sauce-spicy-citus-aioli.jpg" },
-    { name: 'Cinnamon Maple Syrup', image: "/images/February 2026 Popup/sauces.jpg" },
+    { name: 'Rum Sauce', image: '/images/april-sauce-rum.jpg' },
+    { name: 'Spicy Citrus Aioli', image: '/images/april-sauce-citrus-aioli.jpg' },
+    { name: 'Cinnamon Maple', image: '/images/april-sauce-cinnamon-maple.jpg' },
   ]
 
   const juices = [
     'Cranberry Lychee',
     'Orange Juice',
-    'Grape',
+    'Sorrel',
   ]
 
   const extras = [
-    { name: 'Mac & Cheese', price: '$800' },
-    { name: 'Chicken Strips', price: '$600' },
+    { name: 'Cajun Alfredo Pasta', price: '$800' },
+    { name: 'Chicken Bites', price: '$600' },
     { name: 'Waffles', price: '$500' },
     { name: 'Sauce', price: '$300' },
   ]
 
-  const goLargeImage = "/images/happijoy-waffles-savory-box.jpg"
-
-  // Replace the placeholder image paths above with your actual file paths
+  const goLargeImage = '/images/april-large-box-sharing.jpg'
 
   return (
     <div className="pt-20">
@@ -54,7 +50,7 @@ const EventDetailMarch2026 = ({ navigateTo }: EventDetailPageProps) => {
           <div className="text-center max-w-3xl mx-auto">
             <div className="inline-flex items-center gap-2 bg-[#ffc107] text-gray-900 px-4 py-2 rounded-full text-sm font-bold mb-6">
               <Calendar className="w-4 h-4" />
-              <p>Limited Event • March 2026</p>
+              <p>Limited Event • April 2026</p>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
@@ -63,7 +59,7 @@ const EventDetailMarch2026 = ({ navigateTo }: EventDetailPageProps) => {
             </h1>
 
             <p className="text-xl text-white/90 mb-8">
-              Build your own waffle experience with bold flavors and comforting favorites.
+              Mix and match to create your perfect waffle box. Only 50 orders available — order soon!
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -99,8 +95,8 @@ const EventDetailMarch2026 = ({ navigateTo }: EventDetailPageProps) => {
                 <Calendar className="w-7 h-7 text-[#1a9b8a]" />
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">Event Date</h3>
-              <p className="text-2xl font-bold text-[#1a9b8a]">March 25, 2026</p>
-              <p className="text-sm text-gray-500 mt-1">(Also Delivery Day)</p>
+              <p className="text-2xl font-bold text-[#1a9b8a]">April 29, 2026</p>
+              <p className="text-sm text-gray-500 mt-1">Delivery Day</p>
             </div>
 
             <div className="bg-white rounded-2xl p-6 shadow-lg text-center">
@@ -108,7 +104,7 @@ const EventDetailMarch2026 = ({ navigateTo }: EventDetailPageProps) => {
                 <Clock className="w-7 h-7 text-gray-900" />
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">Order Deadline</h3>
-              <p className="text-2xl font-bold text-gray-900">March 20, 2026</p>
+              <p className="text-2xl font-bold text-gray-900">April 24, 2026</p>
             </div>
 
             <div className="bg-white rounded-2xl p-6 shadow-lg text-center">
@@ -130,7 +126,7 @@ const EventDetailMarch2026 = ({ navigateTo }: EventDetailPageProps) => {
             Mix & Match Your Perfect Box
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Every HappiJoy Waffle Box is fully customizable. Choose your favorite combinations and create a box that fits your taste.
+            Only 50 orders available this month. Create your custom waffle box with bold Jamaican flavors.
           </p>
         </div>
       </section>
@@ -141,8 +137,8 @@ const EventDetailMarch2026 = ({ navigateTo }: EventDetailPageProps) => {
           {/* Core Items */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: Soup, name: 'Mac and Cheese', desc: '(Non-baked)', color: '#ffc107' },
-              { icon: Apple, name: 'An Apple', desc: 'Fresh & crisp', color: '#1a9b8a' },
+              { icon: Soup, name: 'Cajun Alfredo Pasta', desc: '', color: '#ffc107' },
+              { icon: Apple, name: 'Berry Bliss Fruit Mix', desc: 'Strawberry, grapes, kiwi, blueberries', color: '#1a9b8a' },
             ].map((item, i) => (
               <div
                 key={i}
@@ -162,11 +158,11 @@ const EventDetailMarch2026 = ({ navigateTo }: EventDetailPageProps) => {
             <div className="text-center mb-10">
               <h3 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Choose Your Waffles</h3>
               <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-                Pick any 2 flavors — from creamy classics to bold island heat.
+                Pick any 2 flavors
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {waffles.map((waffle) => (
                 <div
                   key={waffle.name}
@@ -188,7 +184,7 @@ const EventDetailMarch2026 = ({ navigateTo }: EventDetailPageProps) => {
             </div>
           </div>
 
-          {/* Chicken Strips – Side-by-side with description */}
+          {/* Chicken + Escovitch Fish */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <div className="grid grid-cols-2 gap-6">
@@ -209,32 +205,22 @@ const EventDetailMarch2026 = ({ navigateTo }: EventDetailPageProps) => {
             </div>
 
             <div className="order-1 lg:order-2 text-center lg:text-left">
-              <h3 className="text-3xl font-bold text-gray-900 mb-6">Choose Your Chicken Strips</h3>
-              <p className="text-lg text-gray-600 mb-4">Pick 1 style</p>
+              <h3 className="text-3xl font-bold text-gray-900 mb-6">Choose Your Protein</h3>
+              <p className="text-lg text-gray-600 mb-4">Chicken Bites or Escovitch Fish Filet</p>
               <p className="text-gray-700 leading-relaxed">
-                Crispy, golden chicken strips that balance perfectly with both sweet and savory waffles.
+                Pick BBQ or Original chicken bites, or enjoy our flavorful Escovitch Fish Filet.
               </p>
-              <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
-                {chickenOptions.map((opt) => (
-                  <span
-                    key={opt.name}
-                    className="bg-[#1a9b8a]/10 px-6 py-3 rounded-full font-medium text-[#1a9b8a] shadow-sm"
-                  >
-                    {opt.name}
-                  </span>
-                ))}
-              </div>
             </div>
           </div>
 
-          {/* Sauces – Grid with images */}
+          {/* Sauces */}
           <div className="bg-[#1a9b8a]/5 rounded-3xl p-8 lg:p-12">
             <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Choose Your Sauce</h3>
             <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
               Pick 1 — each one crafted to elevate your custom combination.
             </p>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {sauces.map((sauce) => (
                 <div key={sauce.name} className="text-center group">
                   <div className="overflow-hidden rounded-2xl shadow-lg mb-4 aspect-square">
@@ -253,7 +239,7 @@ const EventDetailMarch2026 = ({ navigateTo }: EventDetailPageProps) => {
 
           {/* Juice */}
           <div className="bg-[#ffc107]/5 rounded-3xl p-10 text-center">
-            <h3 className="text-3xl font-bold text-gray-900 mb-6">Choose Your Fresh Juice</h3>
+            <h3 className="text-3xl font-bold text-gray-900 mb-6">Fresh Juice Box</h3>
             <p className="text-lg text-gray-600 mb-8">Pick 1 refreshing drink to complete your box.</p>
             <div className="flex flex-wrap justify-center gap-6">
               {juices.map((juice) => (
@@ -284,22 +270,30 @@ const EventDetailMarch2026 = ({ navigateTo }: EventDetailPageProps) => {
             </div>
           </div>
 
-          {/* Go Large – Hero Image */}
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-            <img
-              src={goLargeImage}
-              alt="Large Waffle Box for sharing"
-              className="w-full h-[500px] lg:h-[800px] object-cover"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end">
-              <div className="p-10 lg:p-16 text-white max-w-3xl">
-                <h3 className="text-4xl lg:text-5xl font-bold mb-4">Go Large</h3>
-                <p className="text-2xl lg:text-3xl font-bold mb-3">Large Waffle Box — $6,500</p>
-                <p className="text-xl lg:text-2xl opacity-90">
-                  Serves 2 • Perfect for sharing with a friend, partner, or family member.
-                </p>
+          {/* Box Size Options */}
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Go Large */}
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <img
+                src={goLargeImage}
+                alt="Large Waffle Box for sharing"
+                className="w-full h-[420px] object-cover"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end">
+                <div className="p-10 text-white">
+                  <h3 className="text-4xl font-bold mb-3">Go Large</h3>
+                  <p className="text-3xl font-bold mb-1">$7,500</p>
+                  <p className="text-xl opacity-90">Serves 2 • Perfect for sharing</p>
+                </div>
               </div>
+            </div>
+
+            {/* Mini Box */}
+            <div className="bg-gradient-to-br from-[#1a9b8a] to-[#148a7a] rounded-3xl p-12 text-white flex flex-col justify-center">
+              <h3 className="text-4xl font-bold mb-4">Mini Waffle Box</h3>
+              <p className="text-3xl font-bold mb-6">$2,000</p>
+              <p className="text-xl opacity-90">1 flavor waffle only • Perfect for one person</p>
             </div>
           </div>
         </div>
@@ -313,7 +307,7 @@ const EventDetailMarch2026 = ({ navigateTo }: EventDetailPageProps) => {
               How to Order
             </h2>
             <p className="text-xl text-gray-600">
-              Orders close March 20, 2026. Secure your custom waffle box today!
+              Only 50 orders available. Orders close April 24, 2026.
             </p>
           </div>
 
@@ -344,7 +338,7 @@ const EventDetailMarch2026 = ({ navigateTo }: EventDetailPageProps) => {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">3. Delivery</h3>
               <p className="text-gray-600">
-                All orders delivered on March 25, 2026.
+                All orders delivered on April 29, 2026.
               </p>
             </div>
           </div>
@@ -369,10 +363,10 @@ const EventDetailMarch2026 = ({ navigateTo }: EventDetailPageProps) => {
       <section className="py-20 bg-gradient-to-r from-[#1a9b8a] to-[#148a7a] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-            Don't Miss This Limited Box!
+            Only 50 Boxes Available!
           </h2>
           <p className="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
-            Orders close March 20, 2026. Build your custom waffle box today.
+            Don't miss out — orders close April 24, 2026.
           </p>
           <a href="https://wa.me/18763165022" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="bg-[#ffc107] hover:bg-[#e6ac00] text-gray-900 font-bold rounded-full px-12 py-6 text-lg">
@@ -387,4 +381,4 @@ const EventDetailMarch2026 = ({ navigateTo }: EventDetailPageProps) => {
   )
 }
 
-export default EventDetailMarch2026
+export default EventDetailApril2026
