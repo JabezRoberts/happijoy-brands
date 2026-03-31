@@ -7,22 +7,26 @@ interface EventDetailPageProps {
 }
 
 const EventDetailApril2026 = ({ navigateTo }: EventDetailPageProps) => {
+  
   const waffles = [
-    { name: 'Coconut Pistachio', image: '/images/april-waffles-coconut-pistachio.jpg' },
-    { name: 'Cheddar Herb', image: '/images/april-waffles-cheddar-herb.jpg' },
-    { name: 'Scotch Bonnet Surprise', image: '/images/april-waffles-scotch-bonnet.jpg' },
+    { name: 'Coconut Pistachio', image: "/images/February 2026 Popup/coconut-pistachio-box.jpg" }, 
+    { name: 'Vanilla', image: "/images/February 2026 Popup/vanilla-box.jpg" },
+    { name: 'Cheddar Herb', image: "/images/February 2026 Popup/cheddar-herb-box.jpg" },
+    { name: 'Scotch Bonnet Surprise', image: "/images/February 2026 Popup/cheddar-herb-box.jpg" },
   ]
 
   const chickenOptions = [
-    { name: 'BBQ', image: '/images/april-chicken-bbq.jpg' },
-    { name: 'Original', image: '/images/april-chicken-original.jpg' },
+    { name: 'BBQ', image: "/images/February 2026 Popup/chicken-bites.jpg" },
+    { name: 'Original', image: "/images/February 2026 Popup/chicken-bite-cups.jpg" },
   ]
 
   const sauces = [
-    { name: 'Rum Sauce', image: '/images/april-sauce-rum.jpg' },
-    { name: 'Spicy Citrus Aioli', image: '/images/april-sauce-citrus-aioli.jpg' },
-    { name: 'Cinnamon Maple', image: '/images/april-sauce-cinnamon-maple.jpg' },
+    { name: 'Sorrel Syrup', image: "/images/February 2026 Popup/sauces.jpg" },
+    { name: 'Rum Sauce', image: "/images/February 2026 Popup/sauce-rum-cream.jpg" },
+    { name: 'Citrus Spicy Aioli', image: "/images/February 2026 Popup/sauce-spicy-citus-aioli.jpg" },
+    { name: 'Cinnamon Maple Syrup', image: "/images/February 2026 Popup/sauces.jpg" },
   ]
+
 
   const juices = [
     'Cranberry Lychee',
@@ -37,7 +41,7 @@ const EventDetailApril2026 = ({ navigateTo }: EventDetailPageProps) => {
     { name: 'Sauce', price: '$300' },
   ]
 
-  const goLargeImage = '/images/april-large-box-sharing.jpg'
+  const goLargeImage = "/images/happijoy-waffles-savory-box.jpg"
 
   return (
     <div className="pt-20">
