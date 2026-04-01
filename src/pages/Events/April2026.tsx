@@ -63,7 +63,7 @@ const EventDetailApril2026 = ({ navigateTo }: EventDetailPageProps) => {
             </h1>
 
             <p className="text-xl text-white/90 mb-8">
-              Mix and match to create your perfect waffle box. Only 50 orders available — order soon!
+              Mix and match to create your perfect waffle box. Limited orders available. Order soon!
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
