@@ -130,7 +130,7 @@ const EventDetailApril2026 = ({ navigateTo }: EventDetailPageProps) => {
             Mix & Match Your Perfect Box
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Only 50 orders available this month. Create your custom waffle box with bold Jamaican flavors.
+            Limited orders available this month. Create your custom waffle box with bold Jamaican flavors.
           </p>
         </div>
       </section>
@@ -221,7 +221,7 @@ const EventDetailApril2026 = ({ navigateTo }: EventDetailPageProps) => {
           <div className="bg-[#1a9b8a]/5 rounded-3xl p-8 lg:p-12">
             <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Choose Your Sauce</h3>
             <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
-              Pick 1 — each one crafted to elevate your custom combination.
+              One sauce per meal. Each sauce is crafted to elevate your custom combination.
             </p>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -311,7 +311,7 @@ const EventDetailApril2026 = ({ navigateTo }: EventDetailPageProps) => {
               How to Order
             </h2>
             <p className="text-xl text-gray-600">
-              Only 50 orders available. Orders close April 24, 2026.
+              Limited orders available. Orders close April 24, 2026.
             </p>
           </div>
 
@@ -367,7 +367,7 @@ const EventDetailApril2026 = ({ navigateTo }: EventDetailPageProps) => {
       <section className="py-20 bg-gradient-to-r from-[#1a9b8a] to-[#148a7a] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-            Only 50 Boxes Available!
+            Limited  Boxes Available!
           </h2>
           <p className="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
             Don't miss out — orders close April 24, 2026.
