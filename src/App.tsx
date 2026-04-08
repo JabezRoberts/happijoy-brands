@@ -23,6 +23,8 @@ import AllergyPage from './pages/AllergyPage'
 import DisclaimerPage from './pages/DisclaimerPage'
 import FAQPage from './pages/FAQPage'
 
+import AnalyticsTracker from "./analytics"
+
 export type Page = 
   | 'home' 
   | 'about' 
@@ -160,6 +162,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
+      <AnalyticsTracker page={currentPage} />
       <Navigation currentPage={currentPage} navigateTo={navigateTo} isScrolled={isScrolled} />
       <main>
         {renderPage()}
@@ -169,4 +172,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
